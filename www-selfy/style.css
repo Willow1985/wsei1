@@ -128,7 +128,7 @@ footer {
     justify-content: space-between;
 }
 footer img {
-    margin: 0 3px;
+    margin: 0 1px;
     width: 31px;
     opacity: 0.6;
     transition: all 0.3s ease-in-out;
