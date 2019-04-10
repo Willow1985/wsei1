@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+</head>
+<body>
+    <h2>Rejestracja użytkownika</h2>
+    <form action="" method="GET" style="display: flex; flex-direction: column">
+        <input type="text" name="" id="login" value="" placeholder="Login">
+        <input type="password" required name="" id="haslo" value="" placeholder="Hasło">
+        <label for="zgoda">Login</label>
+        <input type="checkbox" name="" id="zgoda" value="">
+        <h3>Płeć</h3>
+        <label for="pk">Kobieta</label>
+        <input type="radio" name="plec" id="pk" value="k">
+        <label for="pm">Mężczyzna</label>
+        <input type="radio" name="plec" id="pm" value="m">
+
+        <input type="file" name="dowod" id="pk">
+
+        <label for="samochod">Jaki jest kolor białego fiata Pana komendanta</label>
+        <select name="" id="samochod" multiple size="3">
+            <option value="bialy">Biały</option>
+            <option value="czerwony">Czerwony</option>
+            <option value="czarny">Czarny</option>
+            <option value="ups">Nie wiem</option>
+        </select>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="hidden" name="source" value="footer">
+        <input type="submit" value="Wyślij forma">
+        <input type="reset" value="Wyczyść swoje dwie godziny pracy">
+        <button>Inny przycisk do wysłania forma</button>
+    </form>
+</body>
+</html>
