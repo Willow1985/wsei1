@@ -1,0 +1,144 @@
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 85px 170px auto;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "section  article article"
+    "section nav footer"
+    
+}
+
+header {
+    background-color: #F4e8dc;
+    text-align: center;
+    padding: 2px;
+    grid-area: header;
+}
+article {
+    background: #272327;
+    grid-area: article;
+}
+article img {
+    width: 100%;
+}
+nav {
+    grid-area: nav;
+    background: #272327;
+}
+#nawigacja {
+    display: flex;
+flex-direction: column;
+}
+button {
+    padding: 30px 0;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+}
+#b1 {
+    background: #F1E4D6;
+}
+#b2 {
+    background: #E8A33B;
+    color: #fff;
+}
+#b3 {
+    background: #694703;
+    color: #fff;
+}
+#b4 {
+    background: #Caa077;
+    color: #fff;
+}
+section {
+    grid-area: section;
+    padding: 10px;
+    height: auto;
+}
+#sekcja {
+    height: auto;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+#sekcja:last-child {
+    border-bottom: none;
+}
+section h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+section p {
+    font-size: 12px;
+    border-bottom: 1 solid #000000;
+    margin: 3px 0;
+    line-height: 15px;
+}
+.pbold {
+    font-weight: bold;
+    font-size: 12px;
+}
+footer {
+    grid-area: footer;
+    background: #272327;
+    color: #fff;
+    padding: 10px;
+}
+footer p {
+    width: 90%;
+    font-size: 8px;
+    line-height: 12px;
+}
+footer h6 {
+    margin: 0;
+}
+
+@media screen and (max-width: 550px) {
+    main {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "article"
+        "header" 
+        "section"
+        "nav"
+        "footer"
+    }
+    h1{
+        font-size: 20px;
+    }
+    footer p {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px) {
+    main {
+        width: 500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: auto 120px auto auto;
+        grid-template-columns: 250px 1fr;
+        grid-template-areas:
+        "header header"
+        "section article" 
+        "section nav"
+        "footer footer"
+    }
+    h1{
+        font-size: 20px;
+    }
+    footer p {
+        width: 50%;
+    }
+}
