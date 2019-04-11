@@ -100,7 +100,26 @@ footer p {
 footer h6 {
     margin: 0;
 }
-
+@media screen and (max-width: 1000px) {
+    main {
+        width: 500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: auto 120px auto auto;
+        grid-template-columns: 250px 1fr;
+        grid-template-areas:
+        "header header"
+        "section article" 
+        "section nav"
+        "footer footer"
+    }
+    h1{
+        font-size: 20px;
+    }
+    footer p {
+        width: 50%;
+    }
+}
 @media screen and (max-width: 550px) {
     main {
         width: 90%;
@@ -114,26 +133,6 @@ footer h6 {
         "section"
         "nav"
         "footer"
-    }
-    h1{
-        font-size: 20px;
-    }
-    footer p {
-        width: 50%;
-    }
-}
-@media screen and (max-width: 700px) {
-    main {
-        width: 500px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-rows: auto 120px auto auto;
-        grid-template-columns: 250px 1fr;
-        grid-template-areas:
-        "header header"
-        "section article" 
-        "section nav"
-        "footer footer"
     }
     h1{
         font-size: 20px;
