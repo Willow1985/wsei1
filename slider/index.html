@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    #box {
+        width: 300px;
+        height: 300px;
+        /* background: grey; */
+    }
+    .red {
+        background: lightblue;
+    }
+    .s50 {
+        font-size: 50px;
+    }
+    .black {
+        background: black;
+        color: #fff;
+    }
+    </style>
+
+</head>
+<body>
+        <!-- onclick="zmienPoreDnia()" pierwszy sposób -->
+    <button id="lightsOff">Zgaś światło</button>
+        <div id="box" class="s50">Jestem wielki</div>
+    <div id="slider"></div>
+
+
+
+    <script type="text/javascript">
+    //let pojemnik = document.getElementById('box')
+    let pojemnik = document.querySelector('#box')
+    //let pojemnik = document.querySelector('div')
+    //let divs = document.getElementsByTagName('div')
+    //let divs = document.querySelectorAll('div')
+    console.dir(pojemnik);
+
+    //zmiana zawartości elmentu
+    //pojemnik.innerHTML = 'haaa, jeste programisto'
+    //pojemnik.innerText = 'haaa, jeste programisto'
+
+    //praca ze stylami
+    //pojemnik.style.background = "red"
+    pojemnik.style.width = "600px"
+    pojemnik.style.marginLeft = "100px"
+
+    //klasy css
+    //pojemnik.className = "s50 red"
+    //pojemnik.className = "" czyszczenie klas
+    pojemnik.classList.add('red')
+    pojemnik.classList.remove('s50')
+    //pojemnik.classList.toggle
+
+    function zmienPoreDnia() {
+        //document.body.classList.add('black')
+        document.body.classList.toggle('black')
+
+    }
+    let lightsBtn = document.getElementById('lightsOff')
+    //lightsBtn.onclick = zmienPoreDnia;
+
+    //druga metoda zamiast htmlowego onclick = zmienPoreDnia;
+
+    //trzecia
+    lightsBtn.addEventListener('click', zmienPoreDnia)
+
+    </script>
+</body>
+</html>
